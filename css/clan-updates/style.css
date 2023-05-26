@@ -1,0 +1,150 @@
+body {
+    background-image: url("https://s20.directupload.net/images/230406/saakrhkz.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merryweather', serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.601);
+
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    flex-basis: 100%;
+    background-color: black;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.267);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateZ(0);
+  }
+  
+  section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  section:hover ~ section {
+    filter: blur(1.5px);
+    transition: filter 1s ease-in-out;
+  }
+  
+  section:not(:hover) {
+    filter: blur(0px);
+    transform: translateZ(0);
+    transition: transform 1s ease-in-out;
+  }
+
+section h2 {
+    margin-top: 10px;
+    align-self: flex-start;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+section p {
+    margin-top: 0;
+    font-size: 16px;
+    color: #828282;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.container {
+    background-color: rgba(0, 0, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}

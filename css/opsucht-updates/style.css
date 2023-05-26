@@ -1,0 +1,21 @@
+.container {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.wrapper {
+    top: 1075px;
+    position: relative;
+    width: 1880px;
+    height: 800px;
+    background: transparent;
+    border: 2px solid rgba(48, 48, 48, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 0;
+  }
+      
